@@ -1,0 +1,14 @@
+# XCFramework (distribué via releases uniquement)
+*.xcframework/
+*.xcframework.zip
+
+# Build artifacts
+.build/
+build/
+*.xcarchive/
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+DerivedData/
+.DS_Store
