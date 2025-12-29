@@ -1,0 +1,192 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios26.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SparteoSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+import Combine
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class SparteoAdView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any SparteoSDK.SparteoBannerDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(wrapping gamBannerView: Any, configId: Swift.String, size: CoreFoundation.CGSize)
+  @objc deinit
+  @_Concurrency.MainActor public func loadAd()
+}
+public protocol SparteoBannerDelegate : AnyObject {
+  func sparteoBannerDidLoad(_ adView: SparteoSDK.SparteoAdView)
+  func sparteoBannerDidFailToLoad(_ adView: SparteoSDK.SparteoAdView, error: any Swift.Error)
+  func sparteoBannerDidRecordImpression(_ adView: SparteoSDK.SparteoAdView)
+  func sparteoBannerDidRecordClick(_ adView: SparteoSDK.SparteoAdView)
+  func sparteoBannerWillPresentScreen(_ adView: SparteoSDK.SparteoAdView)
+  func sparteoBannerDidDismissScreen(_ adView: SparteoSDK.SparteoAdView)
+}
+extension SparteoSDK.SparteoBannerDelegate {
+  public func sparteoBannerWillPresentScreen(_ adView: SparteoSDK.SparteoAdView)
+  public func sparteoBannerDidDismissScreen(_ adView: SparteoSDK.SparteoAdView)
+}
+public enum SparteoBannerError : Swift.Error, Foundation.LocalizedError {
+  case sdkNotInitialized
+  case invalidAdView
+  case noBidAvailable
+  case gamNotFound
+  case loadFailed(Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
+}
+public protocol SparteoInterstitialDelegate : AnyObject {
+  func sparteoInterstitialDidLoad(_ manager: SparteoSDK.SparteoInterstitialManager)
+  func sparteoInterstitialDidFailToLoad(_ manager: SparteoSDK.SparteoInterstitialManager, error: any Swift.Error)
+  func sparteoInterstitialWillPresent(_ manager: SparteoSDK.SparteoInterstitialManager)
+  func sparteoInterstitialDidFailToPresent(_ manager: SparteoSDK.SparteoInterstitialManager, error: any Swift.Error)
+  func sparteoInterstitialDidDismiss(_ manager: SparteoSDK.SparteoInterstitialManager)
+  func sparteoInterstitialDidRecordImpression(_ manager: SparteoSDK.SparteoInterstitialManager)
+  func sparteoInterstitialDidRecordClick(_ manager: SparteoSDK.SparteoInterstitialManager)
+}
+extension SparteoSDK.SparteoInterstitialDelegate {
+  public func sparteoInterstitialWillPresent(_ manager: SparteoSDK.SparteoInterstitialManager)
+  public func sparteoInterstitialDidRecordClick(_ manager: SparteoSDK.SparteoInterstitialManager)
+}
+public enum SparteoInterstitialError : Swift.Error, Foundation.LocalizedError {
+  case sdkNotInitialized
+  case alreadyLoading
+  case notLoaded
+  case gamNotFound
+  case loadFailed(Swift.String)
+  case presentFailed(Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
+}
+@objc public class SparteoInterstitialManager : ObjectiveC.NSObject {
+  weak public var delegate: (any SparteoSDK.SparteoInterstitialDelegate)?
+  public var isLoaded: Swift.Bool {
+    get
+  }
+  public var isLoading: Swift.Bool {
+    get
+  }
+  public init(configId: Swift.String, gamAdUnitId: Swift.String)
+  @_Concurrency.MainActor public func load()
+  @_Concurrency.MainActor public func show(from viewController: UIKit.UIViewController)
+  @objc deinit
+}
+public struct SparteoConfiguration {
+  public let accountId: Swift.String
+  public let serverURL: Swift.String
+  public let timeoutMillis: Swift.Int
+  public let networkId: Swift.String
+  public let bannerFormats: [Swift.String]
+  public let interstitialFormats: [Swift.String]
+  public let testMode: Swift.Int
+  public let debugLogsEnabled: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(accountId: Swift.String, serverURL: Swift.String, timeoutMillis: Swift.Int = 3000, networkId: Swift.String? = nil, bannerFormats: [Swift.String] = ["corner"], interstitialFormats: [Swift.String] = ["interstitial"], testMode: Swift.Int = 0, debugLogsEnabled: Swift.Bool = false)
+  #endif
+  public static func staging(accountId: Swift.String) -> SparteoSDK.SparteoConfiguration
+  public static func production(accountId: Swift.String) -> SparteoSDK.SparteoConfiguration
+}
+public enum SparteoLogLevel : Swift.String {
+  case debug
+  case info
+  case success
+  case warning
+  case error
+  case network
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class SparteoLogger {
+  public static let shared: SparteoSDK.SparteoLogger
+  public var isEnabled: Swift.Bool
+  public var minimumLevel: SparteoSDK.SparteoLogLevel
+  public func log(_ message: Swift.String, level: SparteoSDK.SparteoLogLevel = .info, source: Swift.String = "SDK")
+  public func debug(_ message: Swift.String, source: Swift.String = "SDK")
+  public func info(_ message: Swift.String, source: Swift.String = "SDK")
+  public func success(_ message: Swift.String, source: Swift.String = "SDK")
+  public func warning(_ message: Swift.String, source: Swift.String = "SDK")
+  public func error(_ message: Swift.String, source: Swift.String = "SDK")
+  public func network(_ message: Swift.String, source: Swift.String = "Network")
+  @objc deinit
+}
+public enum AdUnitType : Swift.String, Swift.CaseIterable {
+  case banner320x50
+  case banner300x250
+  case interstitial
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var size: CoreFoundation.CGSize? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [SparteoSDK.AdUnitType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [SparteoSDK.AdUnitType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct SparteoBid {
+  public let adUnitType: SparteoSDK.AdUnitType
+  public let keywords: [Swift.String : Swift.String]
+  public let expiration: Foundation.Date
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var price: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var bidder: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var cacheId: Swift.String? {
+    get
+  }
+  #endif
+  public var isValid: Swift.Bool {
+    get
+  }
+  public var remainingTime: Foundation.TimeInterval {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class Sparteo {
+  @_Concurrency.MainActor public static let version: Swift.String
+  @_Concurrency.MainActor public static var isInitialized: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor public static var configuration: SparteoSDK.SparteoConfiguration? {
+    get
+  }
+  @_Concurrency.MainActor public static func initialize(configuration: SparteoSDK.SparteoConfiguration, adUnits: [(configId: Swift.String, adUnitType: SparteoSDK.AdUnitType)] = [], prefetchOnInit: Swift.Bool = true)
+  @_Concurrency.MainActor public static func initialize(accountId: Swift.String, serverURL: Swift.String, debugLogsEnabled: Swift.Bool = false)
+  @_Concurrency.MainActor public static func registerAndPrefetchAdUnits(_ adUnits: [(configId: Swift.String, adUnitType: SparteoSDK.AdUnitType)])
+  @_Concurrency.MainActor public static func enrichedRequest(for configId: Swift.String, completion: @escaping (Any) -> Swift.Void)
+  @_Concurrency.MainActor public static func setDebugLogsEnabled(_ enabled: Swift.Bool)
+  @objc deinit
+}
+extension SparteoSDK.SparteoLogLevel : Swift.Equatable {}
+extension SparteoSDK.SparteoLogLevel : Swift.Hashable {}
+extension SparteoSDK.SparteoLogLevel : Swift.RawRepresentable {}
+extension SparteoSDK.AdUnitType : Swift.Equatable {}
+extension SparteoSDK.AdUnitType : Swift.Hashable {}
+extension SparteoSDK.AdUnitType : Swift.RawRepresentable {}
+extension SparteoSDK.Sparteo : Swift.Sendable {}

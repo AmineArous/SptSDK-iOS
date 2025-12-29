@@ -1,0 +1,5339 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "SparteoSDK",
+    "printedName": "SparteoSDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SparteoSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SparteoAdView",
+        "printedName": "SparteoAdView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any SparteoSDK.SparteoBannerDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A6AdViewC8delegateAA0A14BannerDelegate_pSgvp",
+            "mangledName": "$s10SparteoSDK0A6AdViewC8delegateAA0A14BannerDelegate_pSgvp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any SparteoSDK.SparteoBannerDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoBannerDelegate",
+                        "printedName": "any SparteoSDK.SparteoBannerDelegate",
+                        "usr": "s:10SparteoSDK0A14BannerDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A6AdViewC8delegateAA0A14BannerDelegate_pSgvg",
+                "mangledName": "$s10SparteoSDK0A6AdViewC8delegateAA0A14BannerDelegate_pSgvg",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any SparteoSDK.SparteoBannerDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoBannerDelegate",
+                        "printedName": "any SparteoSDK.SparteoBannerDelegate",
+                        "usr": "s:10SparteoSDK0A14BannerDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A6AdViewC8delegateAA0A14BannerDelegate_pSgvs",
+                "mangledName": "$s10SparteoSDK0A6AdViewC8delegateAA0A14BannerDelegate_pSgvs",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A6AdViewC8delegateAA0A14BannerDelegate_pSgvM",
+                "mangledName": "$s10SparteoSDK0A6AdViewC8delegateAA0A14BannerDelegate_pSgvM",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(wrapping:configId:size:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoAdView",
+                "printedName": "SparteoSDK.SparteoAdView",
+                "usr": "c:@M@SparteoSDK@objc(cs)SparteoAdView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10SparteoSDK0A6AdViewC8wrapping8configId4sizeACyp_SSSo6CGSizeVtcfc",
+            "mangledName": "$s10SparteoSDK0A6AdViewC8wrapping8configId4sizeACyp_SSSo6CGSizeVtcfc",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "loadAd",
+            "printedName": "loadAd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A6AdViewC04loadC0yyF",
+            "mangledName": "$s10SparteoSDK0A6AdViewC04loadC0yyF",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "AccessControl",
+              "Custom",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoAdView",
+                "printedName": "SparteoSDK.SparteoAdView",
+                "usr": "c:@M@SparteoSDK@objc(cs)SparteoAdView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SparteoSDK@objc(cs)SparteoAdView(im)initWithFrame:",
+            "mangledName": "$s10SparteoSDK0A6AdViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "SparteoSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SparteoSDK@objc(cs)SparteoAdView",
+        "mangledName": "$s10SparteoSDK0A6AdViewC",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SparteoBannerDelegate",
+        "printedName": "SparteoBannerDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "sparteoBannerDidLoad",
+            "printedName": "sparteoBannerDidLoad(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoAdView",
+                "printedName": "SparteoSDK.SparteoAdView",
+                "usr": "c:@M@SparteoSDK@objc(cs)SparteoAdView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A14BannerDelegateP07sparteoC7DidLoadyyAA0A6AdViewCF",
+            "mangledName": "$s10SparteoSDK0A14BannerDelegateP07sparteoC7DidLoadyyAA0A6AdViewCF",
+            "moduleName": "SparteoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SparteoSDK.SparteoBannerDelegate>",
+            "sugared_genericSig": "<Self where Self : SparteoSDK.SparteoBannerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sparteoBannerDidFailToLoad",
+            "printedName": "sparteoBannerDidFailToLoad(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoAdView",
+                "printedName": "SparteoSDK.SparteoAdView",
+                "usr": "c:@M@SparteoSDK@objc(cs)SparteoAdView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A14BannerDelegateP07sparteoC13DidFailToLoad_5erroryAA0A6AdViewC_s5Error_ptF",
+            "mangledName": "$s10SparteoSDK0A14BannerDelegateP07sparteoC13DidFailToLoad_5erroryAA0A6AdViewC_s5Error_ptF",
+            "moduleName": "SparteoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SparteoSDK.SparteoBannerDelegate>",
+            "sugared_genericSig": "<Self where Self : SparteoSDK.SparteoBannerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sparteoBannerDidRecordImpression",
+            "printedName": "sparteoBannerDidRecordImpression(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoAdView",
+                "printedName": "SparteoSDK.SparteoAdView",
+                "usr": "c:@M@SparteoSDK@objc(cs)SparteoAdView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A14BannerDelegateP07sparteoC19DidRecordImpressionyyAA0A6AdViewCF",
+            "mangledName": "$s10SparteoSDK0A14BannerDelegateP07sparteoC19DidRecordImpressionyyAA0A6AdViewCF",
+            "moduleName": "SparteoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SparteoSDK.SparteoBannerDelegate>",
+            "sugared_genericSig": "<Self where Self : SparteoSDK.SparteoBannerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sparteoBannerDidRecordClick",
+            "printedName": "sparteoBannerDidRecordClick(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoAdView",
+                "printedName": "SparteoSDK.SparteoAdView",
+                "usr": "c:@M@SparteoSDK@objc(cs)SparteoAdView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A14BannerDelegateP07sparteoC14DidRecordClickyyAA0A6AdViewCF",
+            "mangledName": "$s10SparteoSDK0A14BannerDelegateP07sparteoC14DidRecordClickyyAA0A6AdViewCF",
+            "moduleName": "SparteoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SparteoSDK.SparteoBannerDelegate>",
+            "sugared_genericSig": "<Self where Self : SparteoSDK.SparteoBannerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sparteoBannerWillPresentScreen",
+            "printedName": "sparteoBannerWillPresentScreen(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoAdView",
+                "printedName": "SparteoSDK.SparteoAdView",
+                "usr": "c:@M@SparteoSDK@objc(cs)SparteoAdView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A14BannerDelegateP07sparteoC17WillPresentScreenyyAA0A6AdViewCF",
+            "mangledName": "$s10SparteoSDK0A14BannerDelegateP07sparteoC17WillPresentScreenyyAA0A6AdViewCF",
+            "moduleName": "SparteoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SparteoSDK.SparteoBannerDelegate>",
+            "sugared_genericSig": "<Self where Self : SparteoSDK.SparteoBannerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sparteoBannerDidDismissScreen",
+            "printedName": "sparteoBannerDidDismissScreen(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoAdView",
+                "printedName": "SparteoSDK.SparteoAdView",
+                "usr": "c:@M@SparteoSDK@objc(cs)SparteoAdView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A14BannerDelegateP07sparteoC16DidDismissScreenyyAA0A6AdViewCF",
+            "mangledName": "$s10SparteoSDK0A14BannerDelegateP07sparteoC16DidDismissScreenyyAA0A6AdViewCF",
+            "moduleName": "SparteoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SparteoSDK.SparteoBannerDelegate>",
+            "sugared_genericSig": "<Self where Self : SparteoSDK.SparteoBannerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sparteoBannerWillPresentScreen",
+            "printedName": "sparteoBannerWillPresentScreen(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoAdView",
+                "printedName": "SparteoSDK.SparteoAdView",
+                "usr": "c:@M@SparteoSDK@objc(cs)SparteoAdView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A14BannerDelegatePAAE07sparteoC17WillPresentScreenyyAA0A6AdViewCF",
+            "mangledName": "$s10SparteoSDK0A14BannerDelegatePAAE07sparteoC17WillPresentScreenyyAA0A6AdViewCF",
+            "moduleName": "SparteoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SparteoSDK.SparteoBannerDelegate>",
+            "sugared_genericSig": "<Self where Self : SparteoSDK.SparteoBannerDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sparteoBannerDidDismissScreen",
+            "printedName": "sparteoBannerDidDismissScreen(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoAdView",
+                "printedName": "SparteoSDK.SparteoAdView",
+                "usr": "c:@M@SparteoSDK@objc(cs)SparteoAdView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A14BannerDelegatePAAE07sparteoC16DidDismissScreenyyAA0A6AdViewCF",
+            "mangledName": "$s10SparteoSDK0A14BannerDelegatePAAE07sparteoC16DidDismissScreenyyAA0A6AdViewCF",
+            "moduleName": "SparteoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SparteoSDK.SparteoBannerDelegate>",
+            "sugared_genericSig": "<Self where Self : SparteoSDK.SparteoBannerDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:10SparteoSDK0A14BannerDelegateP",
+        "mangledName": "$s10SparteoSDK0A14BannerDelegateP",
+        "moduleName": "SparteoSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SparteoBannerError",
+        "printedName": "SparteoBannerError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sdkNotInitialized",
+            "printedName": "sdkNotInitialized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SparteoSDK.SparteoBannerError.Type) -> SparteoSDK.SparteoBannerError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SparteoBannerError",
+                    "printedName": "SparteoSDK.SparteoBannerError",
+                    "usr": "s:10SparteoSDK0A11BannerErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SparteoSDK.SparteoBannerError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoBannerError",
+                        "printedName": "SparteoSDK.SparteoBannerError",
+                        "usr": "s:10SparteoSDK0A11BannerErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SparteoSDK0A11BannerErrorO17sdkNotInitializedyA2CmF",
+            "mangledName": "$s10SparteoSDK0A11BannerErrorO17sdkNotInitializedyA2CmF",
+            "moduleName": "SparteoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidAdView",
+            "printedName": "invalidAdView",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SparteoSDK.SparteoBannerError.Type) -> SparteoSDK.SparteoBannerError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SparteoBannerError",
+                    "printedName": "SparteoSDK.SparteoBannerError",
+                    "usr": "s:10SparteoSDK0A11BannerErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SparteoSDK.SparteoBannerError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoBannerError",
+                        "printedName": "SparteoSDK.SparteoBannerError",
+                        "usr": "s:10SparteoSDK0A11BannerErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SparteoSDK0A11BannerErrorO13invalidAdViewyA2CmF",
+            "mangledName": "$s10SparteoSDK0A11BannerErrorO13invalidAdViewyA2CmF",
+            "moduleName": "SparteoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "noBidAvailable",
+            "printedName": "noBidAvailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SparteoSDK.SparteoBannerError.Type) -> SparteoSDK.SparteoBannerError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SparteoBannerError",
+                    "printedName": "SparteoSDK.SparteoBannerError",
+                    "usr": "s:10SparteoSDK0A11BannerErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SparteoSDK.SparteoBannerError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoBannerError",
+                        "printedName": "SparteoSDK.SparteoBannerError",
+                        "usr": "s:10SparteoSDK0A11BannerErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SparteoSDK0A11BannerErrorO14noBidAvailableyA2CmF",
+            "mangledName": "$s10SparteoSDK0A11BannerErrorO14noBidAvailableyA2CmF",
+            "moduleName": "SparteoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "gamNotFound",
+            "printedName": "gamNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SparteoSDK.SparteoBannerError.Type) -> SparteoSDK.SparteoBannerError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SparteoBannerError",
+                    "printedName": "SparteoSDK.SparteoBannerError",
+                    "usr": "s:10SparteoSDK0A11BannerErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SparteoSDK.SparteoBannerError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoBannerError",
+                        "printedName": "SparteoSDK.SparteoBannerError",
+                        "usr": "s:10SparteoSDK0A11BannerErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SparteoSDK0A11BannerErrorO11gamNotFoundyA2CmF",
+            "mangledName": "$s10SparteoSDK0A11BannerErrorO11gamNotFoundyA2CmF",
+            "moduleName": "SparteoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "loadFailed",
+            "printedName": "loadFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SparteoSDK.SparteoBannerError.Type) -> (Swift.String) -> SparteoSDK.SparteoBannerError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> SparteoSDK.SparteoBannerError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoBannerError",
+                        "printedName": "SparteoSDK.SparteoBannerError",
+                        "usr": "s:10SparteoSDK0A11BannerErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SparteoSDK.SparteoBannerError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoBannerError",
+                        "printedName": "SparteoSDK.SparteoBannerError",
+                        "usr": "s:10SparteoSDK0A11BannerErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SparteoSDK0A11BannerErrorO10loadFailedyACSScACmF",
+            "mangledName": "$s10SparteoSDK0A11BannerErrorO10loadFailedyACSScACmF",
+            "moduleName": "SparteoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A11BannerErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s10SparteoSDK0A11BannerErrorO16errorDescriptionSSSgvp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A11BannerErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s10SparteoSDK0A11BannerErrorO16errorDescriptionSSSgvg",
+                "moduleName": "SparteoSDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10SparteoSDK0A11BannerErrorO",
+        "mangledName": "$s10SparteoSDK0A11BannerErrorO",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SparteoInterstitialDelegate",
+        "printedName": "SparteoInterstitialDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "sparteoInterstitialDidLoad",
+            "printedName": "sparteoInterstitialDidLoad(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoInterstitialManager",
+                "printedName": "SparteoSDK.SparteoInterstitialManager",
+                "usr": "c:@M@SparteoSDK@objc(cs)SparteoInterstitialManager"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A20InterstitialDelegateP07sparteoC7DidLoadyyAA0aC7ManagerCF",
+            "mangledName": "$s10SparteoSDK0A20InterstitialDelegateP07sparteoC7DidLoadyyAA0aC7ManagerCF",
+            "moduleName": "SparteoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SparteoSDK.SparteoInterstitialDelegate>",
+            "sugared_genericSig": "<Self where Self : SparteoSDK.SparteoInterstitialDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sparteoInterstitialDidFailToLoad",
+            "printedName": "sparteoInterstitialDidFailToLoad(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoInterstitialManager",
+                "printedName": "SparteoSDK.SparteoInterstitialManager",
+                "usr": "c:@M@SparteoSDK@objc(cs)SparteoInterstitialManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A20InterstitialDelegateP07sparteoC13DidFailToLoad_5erroryAA0aC7ManagerC_s5Error_ptF",
+            "mangledName": "$s10SparteoSDK0A20InterstitialDelegateP07sparteoC13DidFailToLoad_5erroryAA0aC7ManagerC_s5Error_ptF",
+            "moduleName": "SparteoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SparteoSDK.SparteoInterstitialDelegate>",
+            "sugared_genericSig": "<Self where Self : SparteoSDK.SparteoInterstitialDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sparteoInterstitialWillPresent",
+            "printedName": "sparteoInterstitialWillPresent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoInterstitialManager",
+                "printedName": "SparteoSDK.SparteoInterstitialManager",
+                "usr": "c:@M@SparteoSDK@objc(cs)SparteoInterstitialManager"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A20InterstitialDelegateP07sparteoC11WillPresentyyAA0aC7ManagerCF",
+            "mangledName": "$s10SparteoSDK0A20InterstitialDelegateP07sparteoC11WillPresentyyAA0aC7ManagerCF",
+            "moduleName": "SparteoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SparteoSDK.SparteoInterstitialDelegate>",
+            "sugared_genericSig": "<Self where Self : SparteoSDK.SparteoInterstitialDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sparteoInterstitialDidFailToPresent",
+            "printedName": "sparteoInterstitialDidFailToPresent(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoInterstitialManager",
+                "printedName": "SparteoSDK.SparteoInterstitialManager",
+                "usr": "c:@M@SparteoSDK@objc(cs)SparteoInterstitialManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A20InterstitialDelegateP07sparteoC16DidFailToPresent_5erroryAA0aC7ManagerC_s5Error_ptF",
+            "mangledName": "$s10SparteoSDK0A20InterstitialDelegateP07sparteoC16DidFailToPresent_5erroryAA0aC7ManagerC_s5Error_ptF",
+            "moduleName": "SparteoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SparteoSDK.SparteoInterstitialDelegate>",
+            "sugared_genericSig": "<Self where Self : SparteoSDK.SparteoInterstitialDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sparteoInterstitialDidDismiss",
+            "printedName": "sparteoInterstitialDidDismiss(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoInterstitialManager",
+                "printedName": "SparteoSDK.SparteoInterstitialManager",
+                "usr": "c:@M@SparteoSDK@objc(cs)SparteoInterstitialManager"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A20InterstitialDelegateP07sparteoC10DidDismissyyAA0aC7ManagerCF",
+            "mangledName": "$s10SparteoSDK0A20InterstitialDelegateP07sparteoC10DidDismissyyAA0aC7ManagerCF",
+            "moduleName": "SparteoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SparteoSDK.SparteoInterstitialDelegate>",
+            "sugared_genericSig": "<Self where Self : SparteoSDK.SparteoInterstitialDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sparteoInterstitialDidRecordImpression",
+            "printedName": "sparteoInterstitialDidRecordImpression(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoInterstitialManager",
+                "printedName": "SparteoSDK.SparteoInterstitialManager",
+                "usr": "c:@M@SparteoSDK@objc(cs)SparteoInterstitialManager"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A20InterstitialDelegateP07sparteoC19DidRecordImpressionyyAA0aC7ManagerCF",
+            "mangledName": "$s10SparteoSDK0A20InterstitialDelegateP07sparteoC19DidRecordImpressionyyAA0aC7ManagerCF",
+            "moduleName": "SparteoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SparteoSDK.SparteoInterstitialDelegate>",
+            "sugared_genericSig": "<Self where Self : SparteoSDK.SparteoInterstitialDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sparteoInterstitialDidRecordClick",
+            "printedName": "sparteoInterstitialDidRecordClick(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoInterstitialManager",
+                "printedName": "SparteoSDK.SparteoInterstitialManager",
+                "usr": "c:@M@SparteoSDK@objc(cs)SparteoInterstitialManager"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A20InterstitialDelegateP07sparteoC14DidRecordClickyyAA0aC7ManagerCF",
+            "mangledName": "$s10SparteoSDK0A20InterstitialDelegateP07sparteoC14DidRecordClickyyAA0aC7ManagerCF",
+            "moduleName": "SparteoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SparteoSDK.SparteoInterstitialDelegate>",
+            "sugared_genericSig": "<Self where Self : SparteoSDK.SparteoInterstitialDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sparteoInterstitialWillPresent",
+            "printedName": "sparteoInterstitialWillPresent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoInterstitialManager",
+                "printedName": "SparteoSDK.SparteoInterstitialManager",
+                "usr": "c:@M@SparteoSDK@objc(cs)SparteoInterstitialManager"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A20InterstitialDelegatePAAE07sparteoC11WillPresentyyAA0aC7ManagerCF",
+            "mangledName": "$s10SparteoSDK0A20InterstitialDelegatePAAE07sparteoC11WillPresentyyAA0aC7ManagerCF",
+            "moduleName": "SparteoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SparteoSDK.SparteoInterstitialDelegate>",
+            "sugared_genericSig": "<Self where Self : SparteoSDK.SparteoInterstitialDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sparteoInterstitialDidRecordClick",
+            "printedName": "sparteoInterstitialDidRecordClick(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoInterstitialManager",
+                "printedName": "SparteoSDK.SparteoInterstitialManager",
+                "usr": "c:@M@SparteoSDK@objc(cs)SparteoInterstitialManager"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A20InterstitialDelegatePAAE07sparteoC14DidRecordClickyyAA0aC7ManagerCF",
+            "mangledName": "$s10SparteoSDK0A20InterstitialDelegatePAAE07sparteoC14DidRecordClickyyAA0aC7ManagerCF",
+            "moduleName": "SparteoSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SparteoSDK.SparteoInterstitialDelegate>",
+            "sugared_genericSig": "<Self where Self : SparteoSDK.SparteoInterstitialDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:10SparteoSDK0A20InterstitialDelegateP",
+        "mangledName": "$s10SparteoSDK0A20InterstitialDelegateP",
+        "moduleName": "SparteoSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SparteoInterstitialError",
+        "printedName": "SparteoInterstitialError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sdkNotInitialized",
+            "printedName": "sdkNotInitialized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SparteoSDK.SparteoInterstitialError.Type) -> SparteoSDK.SparteoInterstitialError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SparteoInterstitialError",
+                    "printedName": "SparteoSDK.SparteoInterstitialError",
+                    "usr": "s:10SparteoSDK0A17InterstitialErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SparteoSDK.SparteoInterstitialError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoInterstitialError",
+                        "printedName": "SparteoSDK.SparteoInterstitialError",
+                        "usr": "s:10SparteoSDK0A17InterstitialErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SparteoSDK0A17InterstitialErrorO17sdkNotInitializedyA2CmF",
+            "mangledName": "$s10SparteoSDK0A17InterstitialErrorO17sdkNotInitializedyA2CmF",
+            "moduleName": "SparteoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "alreadyLoading",
+            "printedName": "alreadyLoading",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SparteoSDK.SparteoInterstitialError.Type) -> SparteoSDK.SparteoInterstitialError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SparteoInterstitialError",
+                    "printedName": "SparteoSDK.SparteoInterstitialError",
+                    "usr": "s:10SparteoSDK0A17InterstitialErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SparteoSDK.SparteoInterstitialError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoInterstitialError",
+                        "printedName": "SparteoSDK.SparteoInterstitialError",
+                        "usr": "s:10SparteoSDK0A17InterstitialErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SparteoSDK0A17InterstitialErrorO14alreadyLoadingyA2CmF",
+            "mangledName": "$s10SparteoSDK0A17InterstitialErrorO14alreadyLoadingyA2CmF",
+            "moduleName": "SparteoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "notLoaded",
+            "printedName": "notLoaded",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SparteoSDK.SparteoInterstitialError.Type) -> SparteoSDK.SparteoInterstitialError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SparteoInterstitialError",
+                    "printedName": "SparteoSDK.SparteoInterstitialError",
+                    "usr": "s:10SparteoSDK0A17InterstitialErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SparteoSDK.SparteoInterstitialError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoInterstitialError",
+                        "printedName": "SparteoSDK.SparteoInterstitialError",
+                        "usr": "s:10SparteoSDK0A17InterstitialErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SparteoSDK0A17InterstitialErrorO9notLoadedyA2CmF",
+            "mangledName": "$s10SparteoSDK0A17InterstitialErrorO9notLoadedyA2CmF",
+            "moduleName": "SparteoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "gamNotFound",
+            "printedName": "gamNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SparteoSDK.SparteoInterstitialError.Type) -> SparteoSDK.SparteoInterstitialError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SparteoInterstitialError",
+                    "printedName": "SparteoSDK.SparteoInterstitialError",
+                    "usr": "s:10SparteoSDK0A17InterstitialErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SparteoSDK.SparteoInterstitialError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoInterstitialError",
+                        "printedName": "SparteoSDK.SparteoInterstitialError",
+                        "usr": "s:10SparteoSDK0A17InterstitialErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SparteoSDK0A17InterstitialErrorO11gamNotFoundyA2CmF",
+            "mangledName": "$s10SparteoSDK0A17InterstitialErrorO11gamNotFoundyA2CmF",
+            "moduleName": "SparteoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "loadFailed",
+            "printedName": "loadFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SparteoSDK.SparteoInterstitialError.Type) -> (Swift.String) -> SparteoSDK.SparteoInterstitialError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> SparteoSDK.SparteoInterstitialError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoInterstitialError",
+                        "printedName": "SparteoSDK.SparteoInterstitialError",
+                        "usr": "s:10SparteoSDK0A17InterstitialErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SparteoSDK.SparteoInterstitialError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoInterstitialError",
+                        "printedName": "SparteoSDK.SparteoInterstitialError",
+                        "usr": "s:10SparteoSDK0A17InterstitialErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SparteoSDK0A17InterstitialErrorO10loadFailedyACSScACmF",
+            "mangledName": "$s10SparteoSDK0A17InterstitialErrorO10loadFailedyACSScACmF",
+            "moduleName": "SparteoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "presentFailed",
+            "printedName": "presentFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SparteoSDK.SparteoInterstitialError.Type) -> (Swift.String) -> SparteoSDK.SparteoInterstitialError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> SparteoSDK.SparteoInterstitialError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoInterstitialError",
+                        "printedName": "SparteoSDK.SparteoInterstitialError",
+                        "usr": "s:10SparteoSDK0A17InterstitialErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SparteoSDK.SparteoInterstitialError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoInterstitialError",
+                        "printedName": "SparteoSDK.SparteoInterstitialError",
+                        "usr": "s:10SparteoSDK0A17InterstitialErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SparteoSDK0A17InterstitialErrorO13presentFailedyACSScACmF",
+            "mangledName": "$s10SparteoSDK0A17InterstitialErrorO13presentFailedyACSScACmF",
+            "moduleName": "SparteoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A17InterstitialErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s10SparteoSDK0A17InterstitialErrorO16errorDescriptionSSSgvp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A17InterstitialErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s10SparteoSDK0A17InterstitialErrorO16errorDescriptionSSSgvg",
+                "moduleName": "SparteoSDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10SparteoSDK0A17InterstitialErrorO",
+        "mangledName": "$s10SparteoSDK0A17InterstitialErrorO",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SparteoSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SparteoInterstitialManager",
+        "printedName": "SparteoInterstitialManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any SparteoSDK.SparteoInterstitialDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A19InterstitialManagerC8delegateAA0aC8Delegate_pSgvp",
+            "mangledName": "$s10SparteoSDK0A19InterstitialManagerC8delegateAA0aC8Delegate_pSgvp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any SparteoSDK.SparteoInterstitialDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoInterstitialDelegate",
+                        "printedName": "any SparteoSDK.SparteoInterstitialDelegate",
+                        "usr": "s:10SparteoSDK0A20InterstitialDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A19InterstitialManagerC8delegateAA0aC8Delegate_pSgvg",
+                "mangledName": "$s10SparteoSDK0A19InterstitialManagerC8delegateAA0aC8Delegate_pSgvg",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any SparteoSDK.SparteoInterstitialDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoInterstitialDelegate",
+                        "printedName": "any SparteoSDK.SparteoInterstitialDelegate",
+                        "usr": "s:10SparteoSDK0A20InterstitialDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A19InterstitialManagerC8delegateAA0aC8Delegate_pSgvs",
+                "mangledName": "$s10SparteoSDK0A19InterstitialManagerC8delegateAA0aC8Delegate_pSgvs",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A19InterstitialManagerC8delegateAA0aC8Delegate_pSgvM",
+                "mangledName": "$s10SparteoSDK0A19InterstitialManagerC8delegateAA0aC8Delegate_pSgvM",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isLoaded",
+            "printedName": "isLoaded",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A19InterstitialManagerC8isLoadedSbvp",
+            "mangledName": "$s10SparteoSDK0A19InterstitialManagerC8isLoadedSbvp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "SetterAccess",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A19InterstitialManagerC8isLoadedSbvg",
+                "mangledName": "$s10SparteoSDK0A19InterstitialManagerC8isLoadedSbvg",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isLoading",
+            "printedName": "isLoading",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A19InterstitialManagerC9isLoadingSbvp",
+            "mangledName": "$s10SparteoSDK0A19InterstitialManagerC9isLoadingSbvp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "SetterAccess",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A19InterstitialManagerC9isLoadingSbvg",
+                "mangledName": "$s10SparteoSDK0A19InterstitialManagerC9isLoadingSbvg",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configId:gamAdUnitId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoInterstitialManager",
+                "printedName": "SparteoSDK.SparteoInterstitialManager",
+                "usr": "c:@M@SparteoSDK@objc(cs)SparteoInterstitialManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10SparteoSDK0A19InterstitialManagerC8configId09gamAdUnitF0ACSS_SStcfc",
+            "mangledName": "$s10SparteoSDK0A19InterstitialManagerC8configId09gamAdUnitF0ACSS_SStcfc",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A19InterstitialManagerC4loadyyF",
+            "mangledName": "$s10SparteoSDK0A19InterstitialManagerC4loadyyF",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "AccessControl",
+              "Custom",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "show",
+            "printedName": "show(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A19InterstitialManagerC4show4fromySo16UIViewControllerC_tF",
+            "mangledName": "$s10SparteoSDK0A19InterstitialManagerC4show4fromySo16UIViewControllerC_tF",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "AccessControl",
+              "Custom",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoInterstitialManager",
+                "printedName": "SparteoSDK.SparteoInterstitialManager",
+                "usr": "c:@M@SparteoSDK@objc(cs)SparteoInterstitialManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SparteoSDK@objc(cs)SparteoInterstitialManager(im)init",
+            "mangledName": "$s10SparteoSDK0A19InterstitialManagerCACycfc",
+            "moduleName": "SparteoSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SparteoSDK@objc(cs)SparteoInterstitialManager",
+        "mangledName": "$s10SparteoSDK0A19InterstitialManagerC",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SparteoConfiguration",
+        "printedName": "SparteoConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "accountId",
+            "printedName": "accountId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A13ConfigurationV9accountIdSSvp",
+            "mangledName": "$s10SparteoSDK0A13ConfigurationV9accountIdSSvp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A13ConfigurationV9accountIdSSvg",
+                "mangledName": "$s10SparteoSDK0A13ConfigurationV9accountIdSSvg",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "serverURL",
+            "printedName": "serverURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A13ConfigurationV9serverURLSSvp",
+            "mangledName": "$s10SparteoSDK0A13ConfigurationV9serverURLSSvp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A13ConfigurationV9serverURLSSvg",
+                "mangledName": "$s10SparteoSDK0A13ConfigurationV9serverURLSSvg",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeoutMillis",
+            "printedName": "timeoutMillis",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A13ConfigurationV13timeoutMillisSivp",
+            "mangledName": "$s10SparteoSDK0A13ConfigurationV13timeoutMillisSivp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A13ConfigurationV13timeoutMillisSivg",
+                "mangledName": "$s10SparteoSDK0A13ConfigurationV13timeoutMillisSivg",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "networkId",
+            "printedName": "networkId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A13ConfigurationV9networkIdSSvp",
+            "mangledName": "$s10SparteoSDK0A13ConfigurationV9networkIdSSvp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A13ConfigurationV9networkIdSSvg",
+                "mangledName": "$s10SparteoSDK0A13ConfigurationV9networkIdSSvg",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bannerFormats",
+            "printedName": "bannerFormats",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A13ConfigurationV13bannerFormatsSaySSGvp",
+            "mangledName": "$s10SparteoSDK0A13ConfigurationV13bannerFormatsSaySSGvp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A13ConfigurationV13bannerFormatsSaySSGvg",
+                "mangledName": "$s10SparteoSDK0A13ConfigurationV13bannerFormatsSaySSGvg",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "interstitialFormats",
+            "printedName": "interstitialFormats",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A13ConfigurationV19interstitialFormatsSaySSGvp",
+            "mangledName": "$s10SparteoSDK0A13ConfigurationV19interstitialFormatsSaySSGvp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A13ConfigurationV19interstitialFormatsSaySSGvg",
+                "mangledName": "$s10SparteoSDK0A13ConfigurationV19interstitialFormatsSaySSGvg",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "testMode",
+            "printedName": "testMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A13ConfigurationV8testModeSivp",
+            "mangledName": "$s10SparteoSDK0A13ConfigurationV8testModeSivp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A13ConfigurationV8testModeSivg",
+                "mangledName": "$s10SparteoSDK0A13ConfigurationV8testModeSivg",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "debugLogsEnabled",
+            "printedName": "debugLogsEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A13ConfigurationV16debugLogsEnabledSbvp",
+            "mangledName": "$s10SparteoSDK0A13ConfigurationV16debugLogsEnabledSbvp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A13ConfigurationV16debugLogsEnabledSbvg",
+                "mangledName": "$s10SparteoSDK0A13ConfigurationV16debugLogsEnabledSbvg",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(accountId:serverURL:timeoutMillis:networkId:bannerFormats:interstitialFormats:testMode:debugLogsEnabled:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoConfiguration",
+                "printedName": "SparteoSDK.SparteoConfiguration",
+                "usr": "s:10SparteoSDK0A13ConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10SparteoSDK0A13ConfigurationV9accountId9serverURL13timeoutMillis07networkE013bannerFormats012interstitialL08testMode16debugLogsEnabledACSS_SSSiSSSgSaySSGAMSiSbtcfc",
+            "mangledName": "$s10SparteoSDK0A13ConfigurationV9accountId9serverURL13timeoutMillis07networkE013bannerFormats012interstitialL08testMode16debugLogsEnabledACSS_SSSiSSSgSaySSGAMSiSbtcfc",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "staging",
+            "printedName": "staging(accountId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoConfiguration",
+                "printedName": "SparteoSDK.SparteoConfiguration",
+                "usr": "s:10SparteoSDK0A13ConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A13ConfigurationV7staging9accountIdACSS_tFZ",
+            "mangledName": "$s10SparteoSDK0A13ConfigurationV7staging9accountIdACSS_tFZ",
+            "moduleName": "SparteoSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "production",
+            "printedName": "production(accountId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoConfiguration",
+                "printedName": "SparteoSDK.SparteoConfiguration",
+                "usr": "s:10SparteoSDK0A13ConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A13ConfigurationV10production9accountIdACSS_tFZ",
+            "mangledName": "$s10SparteoSDK0A13ConfigurationV10production9accountIdACSS_tFZ",
+            "moduleName": "SparteoSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10SparteoSDK0A13ConfigurationV",
+        "mangledName": "$s10SparteoSDK0A13ConfigurationV",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SparteoLogLevel",
+        "printedName": "SparteoLogLevel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "debug",
+            "printedName": "debug",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SparteoSDK.SparteoLogLevel.Type) -> SparteoSDK.SparteoLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SparteoLogLevel",
+                    "printedName": "SparteoSDK.SparteoLogLevel",
+                    "usr": "s:10SparteoSDK0A8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SparteoSDK.SparteoLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoLogLevel",
+                        "printedName": "SparteoSDK.SparteoLogLevel",
+                        "usr": "s:10SparteoSDK0A8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SparteoSDK0A8LogLevelO5debugyA2CmF",
+            "mangledName": "$s10SparteoSDK0A8LogLevelO5debugyA2CmF",
+            "moduleName": "SparteoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "info",
+            "printedName": "info",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SparteoSDK.SparteoLogLevel.Type) -> SparteoSDK.SparteoLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SparteoLogLevel",
+                    "printedName": "SparteoSDK.SparteoLogLevel",
+                    "usr": "s:10SparteoSDK0A8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SparteoSDK.SparteoLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoLogLevel",
+                        "printedName": "SparteoSDK.SparteoLogLevel",
+                        "usr": "s:10SparteoSDK0A8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SparteoSDK0A8LogLevelO4infoyA2CmF",
+            "mangledName": "$s10SparteoSDK0A8LogLevelO4infoyA2CmF",
+            "moduleName": "SparteoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SparteoSDK.SparteoLogLevel.Type) -> SparteoSDK.SparteoLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SparteoLogLevel",
+                    "printedName": "SparteoSDK.SparteoLogLevel",
+                    "usr": "s:10SparteoSDK0A8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SparteoSDK.SparteoLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoLogLevel",
+                        "printedName": "SparteoSDK.SparteoLogLevel",
+                        "usr": "s:10SparteoSDK0A8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SparteoSDK0A8LogLevelO7successyA2CmF",
+            "mangledName": "$s10SparteoSDK0A8LogLevelO7successyA2CmF",
+            "moduleName": "SparteoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "warning",
+            "printedName": "warning",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SparteoSDK.SparteoLogLevel.Type) -> SparteoSDK.SparteoLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SparteoLogLevel",
+                    "printedName": "SparteoSDK.SparteoLogLevel",
+                    "usr": "s:10SparteoSDK0A8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SparteoSDK.SparteoLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoLogLevel",
+                        "printedName": "SparteoSDK.SparteoLogLevel",
+                        "usr": "s:10SparteoSDK0A8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SparteoSDK0A8LogLevelO7warningyA2CmF",
+            "mangledName": "$s10SparteoSDK0A8LogLevelO7warningyA2CmF",
+            "moduleName": "SparteoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SparteoSDK.SparteoLogLevel.Type) -> SparteoSDK.SparteoLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SparteoLogLevel",
+                    "printedName": "SparteoSDK.SparteoLogLevel",
+                    "usr": "s:10SparteoSDK0A8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SparteoSDK.SparteoLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoLogLevel",
+                        "printedName": "SparteoSDK.SparteoLogLevel",
+                        "usr": "s:10SparteoSDK0A8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SparteoSDK0A8LogLevelO5erroryA2CmF",
+            "mangledName": "$s10SparteoSDK0A8LogLevelO5erroryA2CmF",
+            "moduleName": "SparteoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "network",
+            "printedName": "network",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SparteoSDK.SparteoLogLevel.Type) -> SparteoSDK.SparteoLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SparteoLogLevel",
+                    "printedName": "SparteoSDK.SparteoLogLevel",
+                    "usr": "s:10SparteoSDK0A8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SparteoSDK.SparteoLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoLogLevel",
+                        "printedName": "SparteoSDK.SparteoLogLevel",
+                        "usr": "s:10SparteoSDK0A8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SparteoSDK0A8LogLevelO7networkyA2CmF",
+            "mangledName": "$s10SparteoSDK0A8LogLevelO7networkyA2CmF",
+            "moduleName": "SparteoSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SparteoSDK.SparteoLogLevel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SparteoLogLevel",
+                    "printedName": "SparteoSDK.SparteoLogLevel",
+                    "usr": "s:10SparteoSDK0A8LogLevelO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10SparteoSDK0A8LogLevelO8rawValueACSgSS_tcfc",
+            "mangledName": "$s10SparteoSDK0A8LogLevelO8rawValueACSgSS_tcfc",
+            "moduleName": "SparteoSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A8LogLevelO8rawValueSSvp",
+            "mangledName": "$s10SparteoSDK0A8LogLevelO8rawValueSSvp",
+            "moduleName": "SparteoSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A8LogLevelO8rawValueSSvg",
+                "mangledName": "$s10SparteoSDK0A8LogLevelO8rawValueSSvg",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10SparteoSDK0A8LogLevelO",
+        "mangledName": "$s10SparteoSDK0A8LogLevelO",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SparteoLogger",
+        "printedName": "SparteoLogger",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoLogger",
+                "printedName": "SparteoSDK.SparteoLogger",
+                "usr": "s:10SparteoSDK0A6LoggerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A6LoggerC6sharedACvpZ",
+            "mangledName": "$s10SparteoSDK0A6LoggerC6sharedACvpZ",
+            "moduleName": "SparteoSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SparteoLogger",
+                    "printedName": "SparteoSDK.SparteoLogger",
+                    "usr": "s:10SparteoSDK0A6LoggerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A6LoggerC6sharedACvgZ",
+                "mangledName": "$s10SparteoSDK0A6LoggerC6sharedACvgZ",
+                "moduleName": "SparteoSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isEnabled",
+            "printedName": "isEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A6LoggerC9isEnabledSbvp",
+            "mangledName": "$s10SparteoSDK0A6LoggerC9isEnabledSbvp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A6LoggerC9isEnabledSbvg",
+                "mangledName": "$s10SparteoSDK0A6LoggerC9isEnabledSbvg",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A6LoggerC9isEnabledSbvs",
+                "mangledName": "$s10SparteoSDK0A6LoggerC9isEnabledSbvs",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A6LoggerC9isEnabledSbvM",
+                "mangledName": "$s10SparteoSDK0A6LoggerC9isEnabledSbvM",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "minimumLevel",
+            "printedName": "minimumLevel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoLogLevel",
+                "printedName": "SparteoSDK.SparteoLogLevel",
+                "usr": "s:10SparteoSDK0A8LogLevelO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A6LoggerC12minimumLevelAA0a3LogE0Ovp",
+            "mangledName": "$s10SparteoSDK0A6LoggerC12minimumLevelAA0a3LogE0Ovp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SparteoLogLevel",
+                    "printedName": "SparteoSDK.SparteoLogLevel",
+                    "usr": "s:10SparteoSDK0A8LogLevelO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A6LoggerC12minimumLevelAA0a3LogE0Ovg",
+                "mangledName": "$s10SparteoSDK0A6LoggerC12minimumLevelAA0a3LogE0Ovg",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SparteoLogLevel",
+                    "printedName": "SparteoSDK.SparteoLogLevel",
+                    "usr": "s:10SparteoSDK0A8LogLevelO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A6LoggerC12minimumLevelAA0a3LogE0Ovs",
+                "mangledName": "$s10SparteoSDK0A6LoggerC12minimumLevelAA0a3LogE0Ovs",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A6LoggerC12minimumLevelAA0a3LogE0OvM",
+                "mangledName": "$s10SparteoSDK0A6LoggerC12minimumLevelAA0a3LogE0OvM",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(_:level:source:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoLogLevel",
+                "printedName": "SparteoSDK.SparteoLogLevel",
+                "hasDefaultArg": true,
+                "usr": "s:10SparteoSDK0A8LogLevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A6LoggerC3log_5level6sourceySS_AA0A8LogLevelOSStF",
+            "mangledName": "$s10SparteoSDK0A6LoggerC3log_5level6sourceySS_AA0A8LogLevelOSStF",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "debug",
+            "printedName": "debug(_:source:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A6LoggerC5debug_6sourceySS_SStF",
+            "mangledName": "$s10SparteoSDK0A6LoggerC5debug_6sourceySS_SStF",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "info",
+            "printedName": "info(_:source:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A6LoggerC4info_6sourceySS_SStF",
+            "mangledName": "$s10SparteoSDK0A6LoggerC4info_6sourceySS_SStF",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "success",
+            "printedName": "success(_:source:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A6LoggerC7success_6sourceySS_SStF",
+            "mangledName": "$s10SparteoSDK0A6LoggerC7success_6sourceySS_SStF",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "warning",
+            "printedName": "warning(_:source:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A6LoggerC7warning_6sourceySS_SStF",
+            "mangledName": "$s10SparteoSDK0A6LoggerC7warning_6sourceySS_SStF",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "error",
+            "printedName": "error(_:source:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A6LoggerC5error_6sourceySS_SStF",
+            "mangledName": "$s10SparteoSDK0A6LoggerC5error_6sourceySS_SStF",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "network",
+            "printedName": "network(_:source:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A6LoggerC7network_6sourceySS_SStF",
+            "mangledName": "$s10SparteoSDK0A6LoggerC7network_6sourceySS_SStF",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10SparteoSDK0A6LoggerC",
+        "mangledName": "$s10SparteoSDK0A6LoggerC",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdUnitType",
+        "printedName": "AdUnitType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "banner320x50",
+            "printedName": "banner320x50",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SparteoSDK.AdUnitType.Type) -> SparteoSDK.AdUnitType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdUnitType",
+                    "printedName": "SparteoSDK.AdUnitType",
+                    "usr": "s:10SparteoSDK10AdUnitTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SparteoSDK.AdUnitType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdUnitType",
+                        "printedName": "SparteoSDK.AdUnitType",
+                        "usr": "s:10SparteoSDK10AdUnitTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SparteoSDK10AdUnitTypeO12banner320x50yA2CmF",
+            "mangledName": "$s10SparteoSDK10AdUnitTypeO12banner320x50yA2CmF",
+            "moduleName": "SparteoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "banner300x250",
+            "printedName": "banner300x250",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SparteoSDK.AdUnitType.Type) -> SparteoSDK.AdUnitType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdUnitType",
+                    "printedName": "SparteoSDK.AdUnitType",
+                    "usr": "s:10SparteoSDK10AdUnitTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SparteoSDK.AdUnitType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdUnitType",
+                        "printedName": "SparteoSDK.AdUnitType",
+                        "usr": "s:10SparteoSDK10AdUnitTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SparteoSDK10AdUnitTypeO13banner300x250yA2CmF",
+            "mangledName": "$s10SparteoSDK10AdUnitTypeO13banner300x250yA2CmF",
+            "moduleName": "SparteoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "interstitial",
+            "printedName": "interstitial",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SparteoSDK.AdUnitType.Type) -> SparteoSDK.AdUnitType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdUnitType",
+                    "printedName": "SparteoSDK.AdUnitType",
+                    "usr": "s:10SparteoSDK10AdUnitTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SparteoSDK.AdUnitType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdUnitType",
+                        "printedName": "SparteoSDK.AdUnitType",
+                        "usr": "s:10SparteoSDK10AdUnitTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SparteoSDK10AdUnitTypeO12interstitialyA2CmF",
+            "mangledName": "$s10SparteoSDK10AdUnitTypeO12interstitialyA2CmF",
+            "moduleName": "SparteoSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "size",
+            "printedName": "size",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreFoundation.CGSize?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK10AdUnitTypeO4sizeSo6CGSizeVSgvp",
+            "mangledName": "$s10SparteoSDK10AdUnitTypeO4sizeSo6CGSizeVSgvp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreFoundation.CGSize?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGSize",
+                        "printedName": "CoreFoundation.CGSize",
+                        "usr": "c:@S@CGSize"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK10AdUnitTypeO4sizeSo6CGSizeVSgvg",
+                "mangledName": "$s10SparteoSDK10AdUnitTypeO4sizeSo6CGSizeVSgvg",
+                "moduleName": "SparteoSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SparteoSDK.AdUnitType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdUnitType",
+                    "printedName": "SparteoSDK.AdUnitType",
+                    "usr": "s:10SparteoSDK10AdUnitTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10SparteoSDK10AdUnitTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s10SparteoSDK10AdUnitTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "SparteoSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK10AdUnitTypeO8rawValueSSvp",
+            "mangledName": "$s10SparteoSDK10AdUnitTypeO8rawValueSSvp",
+            "moduleName": "SparteoSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK10AdUnitTypeO8rawValueSSvg",
+                "mangledName": "$s10SparteoSDK10AdUnitTypeO8rawValueSSvg",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[SparteoSDK.AdUnitType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdUnitType",
+                    "printedName": "SparteoSDK.AdUnitType",
+                    "usr": "s:10SparteoSDK10AdUnitTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK10AdUnitTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s10SparteoSDK10AdUnitTypeO8allCasesSayACGvpZ",
+            "moduleName": "SparteoSDK",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[SparteoSDK.AdUnitType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdUnitType",
+                        "printedName": "SparteoSDK.AdUnitType",
+                        "usr": "s:10SparteoSDK10AdUnitTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK10AdUnitTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s10SparteoSDK10AdUnitTypeO8allCasesSayACGvgZ",
+                "moduleName": "SparteoSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10SparteoSDK10AdUnitTypeO",
+        "mangledName": "$s10SparteoSDK10AdUnitTypeO",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[SparteoSDK.AdUnitType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdUnitType",
+                        "printedName": "SparteoSDK.AdUnitType",
+                        "usr": "s:10SparteoSDK10AdUnitTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SparteoBid",
+        "printedName": "SparteoBid",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "adUnitType",
+            "printedName": "adUnitType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdUnitType",
+                "printedName": "SparteoSDK.AdUnitType",
+                "usr": "s:10SparteoSDK10AdUnitTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A3BidV10adUnitTypeAA02AdeF0Ovp",
+            "mangledName": "$s10SparteoSDK0A3BidV10adUnitTypeAA02AdeF0Ovp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdUnitType",
+                    "printedName": "SparteoSDK.AdUnitType",
+                    "usr": "s:10SparteoSDK10AdUnitTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A3BidV10adUnitTypeAA02AdeF0Ovg",
+                "mangledName": "$s10SparteoSDK0A3BidV10adUnitTypeAA02AdeF0Ovg",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "keywords",
+            "printedName": "keywords",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A3BidV8keywordsSDyS2SGvp",
+            "mangledName": "$s10SparteoSDK0A3BidV8keywordsSDyS2SGvp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A3BidV8keywordsSDyS2SGvg",
+                "mangledName": "$s10SparteoSDK0A3BidV8keywordsSDyS2SGvg",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expiration",
+            "printedName": "expiration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A3BidV10expiration10Foundation4DateVvp",
+            "mangledName": "$s10SparteoSDK0A3BidV10expiration10Foundation4DateVvp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A3BidV10expiration10Foundation4DateVvg",
+                "mangledName": "$s10SparteoSDK0A3BidV10expiration10Foundation4DateVvg",
+                "moduleName": "SparteoSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "price",
+            "printedName": "price",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A3BidV5priceSSSgvp",
+            "mangledName": "$s10SparteoSDK0A3BidV5priceSSSgvp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A3BidV5priceSSSgvg",
+                "mangledName": "$s10SparteoSDK0A3BidV5priceSSSgvg",
+                "moduleName": "SparteoSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bidder",
+            "printedName": "bidder",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A3BidV6bidderSSSgvp",
+            "mangledName": "$s10SparteoSDK0A3BidV6bidderSSSgvp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A3BidV6bidderSSSgvg",
+                "mangledName": "$s10SparteoSDK0A3BidV6bidderSSSgvg",
+                "moduleName": "SparteoSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cacheId",
+            "printedName": "cacheId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A3BidV7cacheIdSSSgvp",
+            "mangledName": "$s10SparteoSDK0A3BidV7cacheIdSSSgvp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A3BidV7cacheIdSSSgvg",
+                "mangledName": "$s10SparteoSDK0A3BidV7cacheIdSSSgvg",
+                "moduleName": "SparteoSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isValid",
+            "printedName": "isValid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A3BidV7isValidSbvp",
+            "mangledName": "$s10SparteoSDK0A3BidV7isValidSbvp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A3BidV7isValidSbvg",
+                "mangledName": "$s10SparteoSDK0A3BidV7isValidSbvg",
+                "moduleName": "SparteoSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "remainingTime",
+            "printedName": "remainingTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A3BidV13remainingTimeSdvp",
+            "mangledName": "$s10SparteoSDK0A3BidV13remainingTimeSdvp",
+            "moduleName": "SparteoSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A3BidV13remainingTimeSdvg",
+                "mangledName": "$s10SparteoSDK0A3BidV13remainingTimeSdvg",
+                "moduleName": "SparteoSDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10SparteoSDK0A3BidV",
+        "mangledName": "$s10SparteoSDK0A3BidV",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "SparteoSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SparteoSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SparteoSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Sparteo",
+        "printedName": "Sparteo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A0C7versionSSvpZ",
+            "mangledName": "$s10SparteoSDK0A0C7versionSSvpZ",
+            "moduleName": "SparteoSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A0C7versionSSvgZ",
+                "mangledName": "$s10SparteoSDK0A0C7versionSSvgZ",
+                "moduleName": "SparteoSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isInitialized",
+            "printedName": "isInitialized",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A0C13isInitializedSbvpZ",
+            "mangledName": "$s10SparteoSDK0A0C13isInitializedSbvpZ",
+            "moduleName": "SparteoSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "Custom",
+              "AccessControl",
+              "SetterAccess",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A0C13isInitializedSbvgZ",
+                "mangledName": "$s10SparteoSDK0A0C13isInitializedSbvgZ",
+                "moduleName": "SparteoSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "configuration",
+            "printedName": "configuration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SparteoSDK.SparteoConfiguration?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SparteoConfiguration",
+                    "printedName": "SparteoSDK.SparteoConfiguration",
+                    "usr": "s:10SparteoSDK0A13ConfigurationV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10SparteoSDK0A0C13configurationAA0A13ConfigurationVSgvpZ",
+            "mangledName": "$s10SparteoSDK0A0C13configurationAA0A13ConfigurationVSgvpZ",
+            "moduleName": "SparteoSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "SetterAccess",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SparteoSDK.SparteoConfiguration?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SparteoConfiguration",
+                        "printedName": "SparteoSDK.SparteoConfiguration",
+                        "usr": "s:10SparteoSDK0A13ConfigurationV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10SparteoSDK0A0C13configurationAA0A13ConfigurationVSgvgZ",
+                "mangledName": "$s10SparteoSDK0A0C13configurationAA0A13ConfigurationVSgvgZ",
+                "moduleName": "SparteoSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(configuration:adUnits:prefetchOnInit:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SparteoConfiguration",
+                "printedName": "SparteoSDK.SparteoConfiguration",
+                "usr": "s:10SparteoSDK0A13ConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[(configId: Swift.String, adUnitType: SparteoSDK.AdUnitType)]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(configId: Swift.String, adUnitType: SparteoSDK.AdUnitType)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdUnitType",
+                        "printedName": "SparteoSDK.AdUnitType",
+                        "usr": "s:10SparteoSDK10AdUnitTypeO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A0C10initialize13configuration7adUnits14prefetchOnInityAA0A13ConfigurationV_SaySS8configId_AA10AdUnitTypeO0enO0tGSbtFZ",
+            "mangledName": "$s10SparteoSDK0A0C10initialize13configuration7adUnits14prefetchOnInityAA0A13ConfigurationV_SaySS8configId_AA10AdUnitTypeO0enO0tGSbtFZ",
+            "moduleName": "SparteoSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(accountId:serverURL:debugLogsEnabled:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A0C10initialize9accountId9serverURL16debugLogsEnabledySS_SSSbtFZ",
+            "mangledName": "$s10SparteoSDK0A0C10initialize9accountId9serverURL16debugLogsEnabledySS_SSSbtFZ",
+            "moduleName": "SparteoSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registerAndPrefetchAdUnits",
+            "printedName": "registerAndPrefetchAdUnits(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[(configId: Swift.String, adUnitType: SparteoSDK.AdUnitType)]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(configId: Swift.String, adUnitType: SparteoSDK.AdUnitType)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdUnitType",
+                        "printedName": "SparteoSDK.AdUnitType",
+                        "usr": "s:10SparteoSDK10AdUnitTypeO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A0C26registerAndPrefetchAdUnitsyySaySS8configId_AA0F8UnitTypeO02adjK0tGFZ",
+            "mangledName": "$s10SparteoSDK0A0C26registerAndPrefetchAdUnitsyySaySS8configId_AA0F8UnitTypeO02adjK0tGFZ",
+            "moduleName": "SparteoSDK",
+            "static": true,
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enrichedRequest",
+            "printedName": "enrichedRequest(for:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A0C15enrichedRequest3for10completionySS_yypctFZ",
+            "mangledName": "$s10SparteoSDK0A0C15enrichedRequest3for10completionySS_yypctFZ",
+            "moduleName": "SparteoSDK",
+            "static": true,
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDebugLogsEnabled",
+            "printedName": "setDebugLogsEnabled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SparteoSDK0A0C19setDebugLogsEnabledyySbFZ",
+            "mangledName": "$s10SparteoSDK0A0C19setDebugLogsEnabledyySbFZ",
+            "moduleName": "SparteoSDK",
+            "static": true,
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10SparteoSDK0A0C",
+        "mangledName": "$s10SparteoSDK0A0C",
+        "moduleName": "SparteoSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "Custom",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/AdFormats\/Banner\/SparteoAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 801,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/AdFormats\/Interstitial\/SparteoInterstitialManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 710,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/AdFormats\/Interstitial\/SparteoInterstitialManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 803,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/AdFormats\/Interstitial\/SparteoInterstitialManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3480,
+      "length": 19,
+      "value": "\"GAMInterstitialAd\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/AdFormats\/Interstitial\/SparteoInterstitialManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3565,
+      "length": 35,
+      "value": "\"GAMInterstitialAd class not found\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/AdFormats\/Interstitial\/SparteoInterstitialManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3610,
+      "length": 14,
+      "value": "\"Interstitial\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/AdFormats\/Interstitial\/SparteoInterstitialManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3650,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/AdFormats\/Interstitial\/SparteoInterstitialManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3936,
+      "length": 54,
+      "value": "\"loadWithAdManagerAdUnitID:request:completionHandler:\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/AdFormats\/Interstitial\/SparteoInterstitialManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4098,
+      "length": 50,
+      "value": "\"GAMInterstitialAd doesn't respond to load method\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/AdFormats\/Interstitial\/SparteoInterstitialManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4158,
+      "length": 14,
+      "value": "\"Interstitial\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/AdFormats\/Interstitial\/SparteoInterstitialManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4198,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/AdFormats\/Interstitial\/SparteoInterstitialManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4608,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/AdFormats\/Interstitial\/SparteoInterstitialManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4701,
+      "length": 63,
+      "value": "\"Erreur chargement interstitiel: \""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/AdFormats\/Interstitial\/SparteoInterstitialManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4763,
+      "length": 12,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/AdFormats\/Interstitial\/SparteoInterstitialManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4774,
+      "length": 14,
+      "value": "\"Interstitial\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/AdFormats\/Interstitial\/SparteoInterstitialManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5012,
+      "length": 36,
+      "value": "\"Interstitiel nil après chargement\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/AdFormats\/Interstitial\/SparteoInterstitialManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5058,
+      "length": 14,
+      "value": "\"Interstitial\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/AdFormats\/Interstitial\/SparteoInterstitialManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5240,
+      "length": 11,
+      "value": "\"Ad is nil\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/AdFormats\/Interstitial\/SparteoInterstitialManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5394,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/AdFormats\/Interstitial\/SparteoInterstitialManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5537,
+      "length": 35,
+      "value": "\"Interstitiel chargé avec succès\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/AdFormats\/Interstitial\/SparteoInterstitialManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5582,
+      "length": 14,
+      "value": "\"Interstitial\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Core\/SparteoConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 1184,
+      "length": 7,
+      "value": "\"1.0.0\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Core\/SparteoConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 1280,
+      "length": 17,
+      "value": "\"sparteo-ios-sdk\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Core\/SparteoConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1420,
+      "length": 4,
+      "value": "3000"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Core\/SparteoConfiguration.swift",
+      "kind": "Array",
+      "offset": 1494,
+      "length": 10,
+      "value": "[\"corner\"]"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Core\/SparteoConfiguration.swift",
+      "kind": "Array",
+      "offset": 1546,
+      "length": 16,
+      "value": "[\"interstitial\"]"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Core\/SparteoConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1588,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Core\/SparteoConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1624,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Core\/SparteoLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 167,
+      "length": 6,
+      "value": "\"🔍\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Core\/SparteoLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 190,
+      "length": 8,
+      "value": "\"ℹ️\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Core\/SparteoLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 218,
+      "length": 5,
+      "value": "\"✅\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Core\/SparteoLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 243,
+      "length": 8,
+      "value": "\"⚠️\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Core\/SparteoLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 269,
+      "length": 5,
+      "value": "\"❌\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Core\/SparteoLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 294,
+      "length": 6,
+      "value": "\"🌐\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Core\/SparteoLogger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 511,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Core\/SparteoLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 757,
+      "length": 5,
+      "value": "\"SDK\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Core\/SparteoLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1062,
+      "length": 5,
+      "value": "\"SDK\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Core\/SparteoLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1187,
+      "length": 5,
+      "value": "\"SDK\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Core\/SparteoLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1314,
+      "length": 5,
+      "value": "\"SDK\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Core\/SparteoLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1444,
+      "length": 5,
+      "value": "\"SDK\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Core\/SparteoLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1572,
+      "length": 5,
+      "value": "\"SDK\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Core\/SparteoLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1700,
+      "length": 9,
+      "value": "\"Network\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Services\/PrebidCacheService.swift",
+      "kind": "Dictionary",
+      "offset": 698,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Services\/PrebidCacheService.swift",
+      "kind": "Dictionary",
+      "offset": 746,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Services\/PrebidCacheService.swift",
+      "kind": "Dictionary",
+      "offset": 806,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Services\/PrebidCacheService.swift",
+      "kind": "Array",
+      "offset": 860,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Services\/PrebidCacheService.swift",
+      "kind": "Dictionary",
+      "offset": 923,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Services\/PrebidCacheService.swift",
+      "kind": "Dictionary",
+      "offset": 971,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Services\/PrebidCacheService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2202,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/Services\/PrebidService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 308,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/SparteoSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 254,
+      "length": 7,
+      "value": "\"1.0.0\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/SparteoSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 356,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/SparteoSDK.swift",
+      "kind": "Array",
+      "offset": 947,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/SparteoSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 982,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/SparteoSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2579,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/SparteoSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 7557,
+      "length": 8,
+      "value": "\"Prebid\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/SparteoSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 7613,
+      "length": 27,
+      "value": "\"Classe Prebid introuvable\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/SparteoSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 7650,
+      "length": 5,
+      "value": "\"SDK\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/SparteoSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 7798,
+      "length": 8,
+      "value": "\"shared\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/SparteoSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 7961,
+      "length": 36,
+      "value": "\"Impossible d'obtenir Prebid.shared\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/SparteoSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 8007,
+      "length": 5,
+      "value": "\"SDK\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/SparteoSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 8258,
+      "length": 44,
+      "value": "\"fetchDemand:configId:impConfig:completion:\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/SparteoSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 9193,
+      "length": 34,
+      "value": "\"Méthode fetchDemand introuvable\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/SparteoSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 9237,
+      "length": 5,
+      "value": "\"SDK\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/SparteoSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 9346,
+      "length": 39,
+      "value": "\"fetchDemand non disponible sur Prebid\""
+    },
+    {
+      "filePath": "\/Users\/aminearous\/Documents\/Work\/Sparteo\/SparteoSDK-Framework\/SparteoSDK\/SparteoSDK\/SparteoSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 9395,
+      "length": 5,
+      "value": "\"SDK\""
+    }
+  ]
+}
