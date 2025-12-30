@@ -9,27 +9,19 @@ let package = Package(
     products: [
         .library(
             name: "SparteoSDK",
-            targets: ["SparteoSDKTarget"]
+            targets: ["SparteoSDK", "PrebidMobile"]
         )
     ],
     targets: [
-        .target(
-            name: "SparteoSDKTarget",
-            dependencies: [
-                .target(name: "SparteoSDK"),
-                .target(name: "PrebidMobile")
-            ],
-            path: "SparteoSDKTarget"
-        ),
         .binaryTarget(
             name: "SparteoSDK",
-            url: "https://github.com/AmineArous/SptSDK-iOS/releases/download/1.0.9/SparteoSDK.xcframework.zip",
+            url: "https://github.com/AmineArous/SptSDK-iOS/releases/download/1.0.10/SparteoSDK.xcframework.zip",
             checksum: "cc96e2d8fdc52a010daf63232f4fd0f89927959560bbc778f05b395f91a940dc"
         ),
         .binaryTarget(
             name: "PrebidMobile",
-            url: "https://github.com/AmineArous/SptSDK-iOS/releases/download/1.0.9/PrebidMobile.xcframework.zip",
-            checksum: "e6cab9b41ac92d60df1a88941a491afb17532f46adea7e46464e056361a5f2f8"
+            url: "https://github.com/AmineArous/SptSDK-iOS/releases/download/1.0.10/PrebidMobile.xcframework.zip",
+            checksum: "9a1e20932396d20bace2e6344fc01047b9bb7658f640f91a3ddb863e82e6b3cb"
         )
     ]
 )
