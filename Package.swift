@@ -15,8 +15,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SparteoSDK",
-            url: "https://github.com/AmineArous/SptSDK-iOS/releases/download/3.0.5/SparteoSDK.xcframework.zip",
-            checksum: "dd9432403b7cfc0cf3951cfc28aff3f21d6e270ae23d9e00d873091560d54220"
+            url: "https://github.com/AmineArous/SptSDK-iOS/releases/download/3.0.6/SparteoSDK.xcframework.zip",
+            checksum: "3e1f797491c8be8c95dcd84635d879ce190c0229bb33071c0a68066db1f3b684"
         )
     ]
 )
