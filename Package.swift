@@ -15,17 +15,17 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SparteoSDK",
-            url: "https://github.com/AmineArous/SptSDK-iOS/releases/download/2.0.9/SparteoSDK.xcframework.zip",
-            checksum: "912238a73cbcb28b0640699bc04bfcd20d8c91845a4e1efd27fdaed60801d621"
+            url: "https://github.com/AmineArous/SptSDK-iOS/releases/download/2.1.0/SparteoSDK.xcframework.zip",
+            checksum: "81681e8e36afa0d298819a07a20b48934eebe8bc6d3df73e6b307f453fc90eba"
         ),
         .binaryTarget(
             name: "PrebidMobile",
-            url: "https://github.com/AmineArous/SptSDK-iOS/releases/download/2.0.9/PrebidMobile.xcframework.zip",
+            url: "https://github.com/AmineArous/SptSDK-iOS/releases/download/2.1.0/PrebidMobile.xcframework.zip",
             checksum: "c32692993b173d42c932d2bde80bb52c903133fc2caf23036a0fda903dda6deb"
         ),
         .binaryTarget(
             name: "OMSDK_Prebidorg",
-            url: "https://github.com/AmineArous/SptSDK-iOS/releases/download/2.0.9/OMSDK_Prebidorg.xcframework.zip",
+            url: "https://github.com/AmineArous/SptSDK-iOS/releases/download/2.1.0/OMSDK_Prebidorg.xcframework.zip",
             checksum: "ed850cd5ca4bb583f51a110c7f03d083127aa178d9a89fc0ac76ebbe2075c5f1"
         )
     ]
